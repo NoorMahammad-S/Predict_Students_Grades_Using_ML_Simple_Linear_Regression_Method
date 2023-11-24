@@ -13,7 +13,7 @@ The dataset used for this project is stored in a CSV file, which should be provi
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/NoorMahammad-S/Predict_Students_Grades_Using_ML_Simple_Linear_Regression_Method.git
    ```
 
 2. Install the required dependencies:
