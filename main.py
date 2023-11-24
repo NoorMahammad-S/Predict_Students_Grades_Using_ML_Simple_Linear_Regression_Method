@@ -9,8 +9,19 @@ import matplotlib.pyplot as plt
 url = "data/dataset.csv"  # Update this with the path to your dataset
 dataset = pd.read_csv(url)
 
-# Display the first few rows of the dataset
-print(dataset.head())
+# Display basic information about the dataset
+print(dataset.info())
+print(dataset.describe())
+
+# Check for missing values
+print("Missing values:\n", dataset.isnull().sum())
+
+# Visualize the relationship between hours and marks
+plt.scatter(dataset['Hours'], dataset['Marks'])
+plt.title('Hours vs Marks')
+plt.xlabel('Hours of Study')
+plt.ylabel('Marks')
+plt.show()
 
 # Split the dataset into features (X) and target variable (y)
 X = dataset['Hours'].values.reshape(-1, 1)
